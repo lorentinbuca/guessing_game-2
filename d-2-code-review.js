@@ -41,17 +41,31 @@ score++
 alert("Sorry! " + question3 + " That is not one of the listed answers.");
 }
 
-var question4= prompt("Am I legally an adult in age?");
+var question4= prompt("Am I legally an adult in age, yes or no?");
 
 if (question4 === "yes") {
 alert("Correct! I am 20 years old.");
 console.log("The user answered with yes");
 score++
-} else if (question3 === "no") {
+} else if (question4 === "no") {
 alert("Incorrect! I am actually 20 years of age, two years over the legal age.");
 console.log("The user answered with no");
 } else {
-alert("Sorry! " + question3 + " That is not one of the listed answers.");
+alert("Sorry! " + question4 + " That is not one of the listed answers.");
 }
+
+var question5= prompt("Am I a sports fanatic, yes or no?");
+
+if (question5 === "yes") {
+alert("Incorrect! I do not watch or play a lot of sports.");
+console.log("The user answered with yes");
+} else if (question5 === "no") {
+alert("Correct! I am not a sports fanatic.");
+score++
+} else {
+alert("Sorry! " + question5 + " That is not one of the listed answers.");
+}
+
+
 
 alert("You got " + score + " correct answers out of 3!");
