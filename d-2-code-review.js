@@ -61,11 +61,24 @@ alert("Incorrect! I do not watch or play a lot of sports.");
 console.log("The user answered with yes");
 } else if (question5 === "no") {
 alert("Correct! I am not a sports fanatic.");
+console.log("The user answered with no");
 score++
 } else {
 alert("Sorry! " + question5 + " That is not one of the listed answers.");
 }
 
+var question6= prompt("Do I like playing video games, yes or no?");
+
+if (question6 === "yes") {
+alert("Correct! I absolutely love playing video games.");
+console.log("The user answered with yes");
+score++
+} else if (question6 === "no") {
+alert("Incorrect! I love to play video games.");
+console.log("The user answered with no");
+} else {
+alert("Sorry! " + question6 + " That is not one of the listed answers.");
+}
 
 
 alert("You got " + score + " correct answers out of 3!");
