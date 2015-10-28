@@ -41,4 +41,17 @@ score++
 alert("Sorry! " + question3 + " That is not one of the listed answers.");
 }
 
+var question4= prompt("Am I legally an adult in age?");
+
+if (question4 === "yes") {
+alert("Correct! I am 20 years old.");
+console.log("The user answered with yes");
+score++
+} else if (question3 === "no") {
+alert("Incorrect! I am actually 20 years of age, two years over the legal age.");
+console.log("The user answered with no");
+} else {
+alert("Sorry! " + question3 + " That is not one of the listed answers.");
+}
+
 alert("You got " + score + " correct answers out of 3!");
