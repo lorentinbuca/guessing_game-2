@@ -81,4 +81,4 @@ alert("Sorry! " + question6 + " That is not one of the listed answers.");
 }
 
 
-alert("You got " + score + " correct answers out of 3!");
+alert("You got " + score + " correct answers out of 6!");
