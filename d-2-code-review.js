@@ -2,6 +2,7 @@ alert("Are you ready to play?");
 
 var score = 0;
 
+var ans1 = document.getElementId("answer1");
 var question1 = prompt("Is my nationality South Korean, yes or no?").toLowerCase();
 
 if (question1 === "yes") {
@@ -14,7 +15,7 @@ score++
 } else {
 alert("Sorry! " + question1 + " That is not one of the listed answers.");
 }
-
+var ans2 = document.getElementId("answer2");
 var question2 = prompt("Is my favorite superhero, spiderman, yes or no?").toLowerCase();
 
 if (question2 === "yes") {
@@ -28,6 +29,7 @@ console.log("The user answered with no");
 alert("Sorry! " + question2 + " That is not one of the listed answers.");
 }
 
+var ans3 = document.getElementId("answer3");
 var question3= prompt("Do I have a younger brother, yes or no?").toLowerCase();
 
 if (question3 === "yes") {
@@ -41,6 +43,7 @@ score++
 alert("Sorry! " + question3 + " That is not one of the listed answers.");
 }
 
+var ans4 = document.getElementId("answer4");
 var question4= prompt("Am I legally an adult in age, yes or no?");
 
 if (question4 === "yes") {
@@ -54,6 +57,7 @@ console.log("The user answered with no");
 alert("Sorry! " + question4 + " That is not one of the listed answers.");
 }
 
+var ans5 = document.getElementId("answer5");
 var question5= prompt("Am I a sports fanatic, yes or no?");
 
 if (question5 === "yes") {
@@ -67,6 +71,7 @@ score++
 alert("Sorry! " + question5 + " That is not one of the listed answers.");
 }
 
+var ans6 = document.getElementId("answer6");
 var question6= prompt("Do I like playing video games, yes or no?");
 
 if (question6 === "yes") {
