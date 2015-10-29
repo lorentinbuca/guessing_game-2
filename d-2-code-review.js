@@ -2,83 +2,90 @@ alert("Are you ready to play?");
 
 var score = 0;
 
-var question1 = prompt("Is my nationality South Korean, yes or no?").toLowerCase();
+var ans1 = document.getElementById("answer1");
+var ans2 = document.getElementById("answer2");
+var ans3 = document.getElementById("answer3");
+var ans4 = document.getElementById("answer4");
+var ans5 = document.getElementById("answer5");
+var ans6 = document.getElementById("answer6");
 
-if (question1 === "yes") {
-alert("Incorrect! My nationality is American.");
-console.log("The user answered with yes");
-} else if (question1 === "no") {
-alert("Correct! I am not South Korean.");
-console.log("The user answered with no");
-score++
-} else {
-alert("Sorry! " + question1 + " That is not one of the listed answers.");
+function firstQuestion() {
+  var question1 = prompt("Is my nationality South Korean, yes or no?").toLowerCase();
+  if (question1 === "yes") {
+  ans1.innerHTML = "Incorrect! My nationality is American.";
+  } else if (question1 === "no") {
+  ans1.innerHTML = "Correct! I am not South Korean.";
+  score++;
+  } else {
+  ans1.innerHTML = "Sorry! " + question1 + " That is not one of the listed answers.";
+  }
 }
+firstQuestion();
 
-var question2 = prompt("Is my favorite superhero, spiderman, yes or no?").toLowerCase();
-
-if (question2 === "yes") {
-alert("Correct! My favorite superhero is indeed, spiderman");
-console.log("The user answered with yes");
-score++
-} else if (question2 === "no") {
-alert("Incorrect! Spiderman is in fact my favorite superhero.");
-console.log("The user answered with no");
-} else {
-alert("Sorry! " + question2 + " That is not one of the listed answers.");
+function secondQuestion() {
+  var question2 = prompt("Is my favorite superhero, spiderman, yes or no?").toLowerCase();
+  if (question2 === "yes") {
+  ans2.innerHTML = "Correct! My favorite superhero is indeed, spiderman";
+  score++;
+  } else if (question2 === "no") {
+  ans2.innerHTML = "Incorrect! Spiderman is in fact my favorite superhero.";
+  } else {
+  ans2.innerHTML = "Sorry! " + question2 + " That is not one of the listed answers.";
+  }
 }
+secondQuestion();
 
-var question3= prompt("Do I have a younger brother, yes or no?").toLowerCase();
-
-if (question3 === "yes") {
-alert("Incorrect! However, I do have an older brother.");
-console.log("The user answered with yes");
-} else if (question3 === "no") {
-alert("Correct! I do not have a younger brother.");
-console.log("The user answered with no");
-score++
-} else {
-alert("Sorry! " + question3 + " That is not one of the listed answers.");
+function thirdQuestion() {
+  var question3= prompt("Do I have a younger brother, yes or no?").toLowerCase();
+  if (question3 === "yes") {
+  ans3.innerHTML = "Incorrect! However, I do have an older brother.";
+  } else if (question3 === "no") {
+  ans3.innerHTML = "Correct! I do not have a younger brother.";
+  score++
+  } else {
+  ans3.innerHTML = "Sorry! " + question3 + " That is not one of the listed answers.";
+  }
 }
+thirdQuestion();
 
-var question4= prompt("Am I legally an adult in age, yes or no?");
-
-if (question4 === "yes") {
-alert("Correct! I am 20 years old.");
-console.log("The user answered with yes");
-score++
-} else if (question4 === "no") {
-alert("Incorrect! I am actually 20 years of age, two years over the legal age.");
-console.log("The user answered with no");
-} else {
-alert("Sorry! " + question4 + " That is not one of the listed answers.");
+function fourthQuestion() {
+  var question4= prompt("Am I legally an adult in age, yes or no?");
+  if (question4 === "yes") {
+  ans4.innerHTML = "Correct! I am 20 years old.";
+  score++
+  } else if (question4 === "no") {
+  ans4.innerHTML = "Incorrect! I am actually 20 years of age, two years over the legal age.";
+  } else {
+  ans4.innerHTML = "Sorry! " + question4 + " That is not one of the listed answers.";
+  }
 }
+fourthQuestion();
 
-var question5= prompt("Am I a sports fanatic, yes or no?");
-
-if (question5 === "yes") {
-alert("Incorrect! I do not watch or play a lot of sports.");
-console.log("The user answered with yes");
-} else if (question5 === "no") {
-alert("Correct! I am not a sports fanatic.");
-console.log("The user answered with no");
-score++
-} else {
-alert("Sorry! " + question5 + " That is not one of the listed answers.");
+function fifthQuestion() {
+  var question5= prompt("Am I a sports fanatic, yes or no?");
+  if (question5 === "yes") {
+  ans5.innerHTML = "Incorrect! I do not watch or play a lot of sports.";
+  } else if (question5 === "no") {
+  ans5.innerHTML = "Correct! I am not a sports fanatic.";
+  score++;
+  } else {
+  ans5.innerHTML = "Sorry! " + question5 + " That is not one of the listed answers.";
+  }
 }
+fifthQuestion();
 
-var question6= prompt("Do I like playing video games, yes or no?");
-
-if (question6 === "yes") {
-alert("Correct! I absolutely love playing video games.");
-console.log("The user answered with yes");
-score++
-} else if (question6 === "no") {
-alert("Incorrect! I love to play video games.");
-console.log("The user answered with no");
-} else {
-alert("Sorry! " + question6 + " That is not one of the listed answers.");
+function sixthQuestion() {
+  var question6= prompt("Do I like playing video games, yes or no?");
+  if (question6 === "yes") {
+  ans6.innerHTML = "Correct! I absolutely love playing video games.";
+  score++;
+  } else if (question6 === "no") {
+  ans6.innerHTML = "Incorrect! I love to play video games.";
+  } else {
+  ans6.innerHTML = "Sorry! " + question6 + " That is not one of the listed answers.";
+  }
 }
+sixthQuestion();
 
 
 alert("You got " + score + " correct answers out of 6!");
