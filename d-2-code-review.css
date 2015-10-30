@@ -1,0 +1,32 @@
+* {
+  /*universal*/
+  font-family: Arial;
+  font-size: 14px;
+  background-image: url('');
+}
+header {
+  border: 1px dashed orange;
+}
+
+h1{
+  /*type of selectors*/
+  font-size: 20px;
+}
+#demo {
+  background-color:gray;
+  padding: 2%; /* Apply 2% paddding to all sides */
+  padding: 2% 1%; /* Apply 2% to top/bottom and 1% to left/right*/
+  padding: 1% 2% 3% 4%; /* 1% top, 2 right, 3 bottom, 4 left*/
+  margin: 0 auto;
+  color: rgb(100, 32, 255);
+
+}
+.red{
+ 
+  color: red;
+
+}
+.green{
+  color: green;
+
+}
