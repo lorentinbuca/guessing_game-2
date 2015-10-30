@@ -1,3 +1,8 @@
+Driver: Lorentin Buca
+Navigator: Kevin Lim
+
+Code was worked together.
+
 # guessing_game
 
 Code Programmer: Kevin Lim
